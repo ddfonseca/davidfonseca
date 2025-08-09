@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>{{ title }}</title>
+    <style>
+        /* Reset e Configurações Globais */
+        :root {
+            --background: #121212;
+            --text-primary: #e0e0e0;
+            --text-secondary: #b3b3b3;
+            --accent: #ffffff;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.7; 
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            
+            /* Layout Centralizado */
+            display: grid;
+            place-content: center;
+            padding: 2rem;
+        }
+
+        /* Container principal do conteúdo */
+        main {
+            max-width: 720px; 
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--accent);
+            margin: 3rem 0 1.5rem 0; 
+        }
+
+        h1, h2, h3 {
+            font-size: 1.5rem;
+        }
+
+
+        p {
+            font-size: 1.125rem;/
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-secondary);
+            transition: color 0.2s, border-bottom-color 0.2s;
+        }
+
+        a:hover {
+            color: var(--text-primary);
+            border-bottom-color: var(--accent);
+        }
+
+        main > :first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+</html>
