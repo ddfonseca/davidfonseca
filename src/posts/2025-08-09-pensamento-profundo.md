@@ -30,3 +30,5 @@ Além disso, o hábito de estar sempre conectado, respondendo mensagens instant�
 Pensar devagar não é sinal de lentidão, mas sim de qualidade e presença. Ao desacelerar, criamos espaço para entender melhor o que temos à frente, diminuímos a ansiedade e reduzimos distrações. Ironicamente, isso nos permite resolver tarefas mais rápido e com menos esforço do que quando tentamos apressar tudo.
 
 No fim, investir tempo para pensar com calma é a melhor estratégia para produzir resultados sólidos e duradouros.
+
+– David
