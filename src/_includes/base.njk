@@ -10,10 +10,10 @@
     <style>
         /* Reset e Configurações Globais */
         :root {
-            --background: #121212;
-            --text-primary: #e0e0e0;
-            --text-secondary: #b3b3b3;
-            --accent: #ffffff;
+            --background: #ffffff;
+            --text-primary: #2c2c2c;
+            --text-secondary: #666666;
+            --accent: #000000;
             --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
@@ -49,7 +49,7 @@
 
 
         p {
-            font-size: 1.125rem;/
+            font-size: 1rem;
             margin-bottom: 1rem;
             color: var(--text-primary);
         }
@@ -69,11 +69,23 @@
         main > :first-child {
             margin-top: 0;
         }
+
+        /* Go back link styling */
+        .go-back {
+            display: inline-block;
+            margin-top: 3rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <main>
         {{ content | safe }}
+        {% if tags and "post" in tags %}
+        <a href="/" class="go-back">← Voltar para o início</a>
+        {% endif %}
     </main>
 </body>
 </html>
