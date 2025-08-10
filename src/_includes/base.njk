@@ -36,6 +36,40 @@
             max-width: 720px; 
         }
 
+        /* Responsividade das imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem 0;
+        }
+
+        /* Media queries para mobile */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            main {
+                max-width: 100%;
+            }
+            
+            h1, h2, h3 {
+                font-size: 1.3rem;
+                margin: 2rem 0 1rem 0;
+            }
+            
+            p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 0.75rem;
+            }
+        }
+
         h1, h2, h3 {
             font-weight: 700;
             line-height: 1.2;
